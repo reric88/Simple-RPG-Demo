@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "msNatureGrowsAmbientSulo.wav",
   "type": 0,
-  "volume": 0.51,
+  "volume": 1.0,
 }
