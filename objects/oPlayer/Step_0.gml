@@ -7,7 +7,7 @@ sc_input();
 
 // ATTACK ----------
 if (attack == 1) {state = "attack"; image_index = 0; noinput = true; attack = 0;
-	audio_play_sound(HeavyPunch, 1, 0);
+	audio_play_sound(snSword, 1, 0);
 	}
 // END ATTACK ----------
 

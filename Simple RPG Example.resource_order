@@ -34,6 +34,7 @@
     {"name":"snmenuOpen","order":2,"path":"sounds/snmenuOpen/snmenuOpen.yy",},
     {"name":"Sprite3","order":2,"path":"sprites/Sprite3/Sprite3.yy",},
     {"name":"snMenuClose","order":1,"path":"sounds/snMenuClose/snMenuClose.yy",},
+    {"name":"snSword","order":6,"path":"sounds/snSword/snSword.yy",},
     {"name":"oCollision","order":6,"path":"objects/oCollision/oCollision.yy",},
     {"name":"sc_stall_state","order":2,"path":"scripts/sc_stall_state/sc_stall_state.yy",},
     {"name":"snFuse","order":4,"path":"sounds/snFuse/snFuse.yy",},

@@ -50,6 +50,7 @@
     {"id":{"name":"snmenuOpen","path":"sounds/snmenuOpen/snmenuOpen.yy",},"order":2,},
     {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},"order":2,},
     {"id":{"name":"snMenuClose","path":"sounds/snMenuClose/snMenuClose.yy",},"order":1,},
+    {"id":{"name":"snSword","path":"sounds/snSword/snSword.yy",},"order":6,},
     {"id":{"name":"oBomb","path":"objects/oBomb/oBomb.yy",},"order":0,},
     {"id":{"name":"sPlayerIU","path":"sprites/sPlayerIU/sPlayerIU.yy",},"order":0,},
     {"id":{"name":"oExplode","path":"objects/oExplode/oExplode.yy",},"order":0,},
@@ -86,7 +87,7 @@
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":1,},
     {"id":{"name":"sc_wander_state","path":"scripts/sc_wander_state/sc_wander_state.yy",},"order":0,},
     {"id":{"name":"msNatureGrowsAmbientSulo","path":"sounds/msNatureGrowsAmbientSulo/msNatureGrowsAmbientSulo.yy",},"order":5,},
-    {"id":{"name":"Object11","path":"objects/Object11/Object11.yy",},"order":0,},
+    {"id":{"name":"oHelper","path":"objects/oHelper/oHelper.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "RoomOrderNodes": [
