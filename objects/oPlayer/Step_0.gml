@@ -3,6 +3,8 @@
 sc_input();
 // END INPUT SCRIPT ----------
 
+depth = -y;
+
 #region BUTTON FUNCTIONS
 
 // ATTACK ----------

@@ -28,7 +28,7 @@
   "origin": 7,
   "parent": {
     "name": "sPlayerAttack",
-    "path": "folders/Sprites/sp_Player/sPlayerAttack.yy",
+    "path": "folders/Sprites/Player/sPlayerAttack.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

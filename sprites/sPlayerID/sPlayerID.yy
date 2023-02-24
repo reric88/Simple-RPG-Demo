@@ -26,7 +26,7 @@
   "origin": 7,
   "parent": {
     "name": "sPlayerIdle",
-    "path": "folders/Sprites/sp_Player/sPlayerIdle.yy",
+    "path": "folders/Sprites/Player/sPlayerIdle.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

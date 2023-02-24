@@ -27,7 +27,7 @@
   "origin": 7,
   "parent": {
     "name": "sPlayerWalk",
-    "path": "folders/Sprites/sp_Player/sPlayerWalk.yy",
+    "path": "folders/Sprites/Player/sPlayerWalk.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

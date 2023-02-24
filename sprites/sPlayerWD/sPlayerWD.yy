@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "sp_Player",
-    "path": "folders/Sprites/sp_Player.yy",
+    "name": "sPlayerWalk",
+    "path": "folders/Sprites/Player/sPlayerWalk.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

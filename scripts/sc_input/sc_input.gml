@@ -14,20 +14,21 @@ if (noinput == false) {
 	item = keyboard_check_pressed(ord("D")) or gamepad_button_check_pressed(0, gp_select);
 	menu = keyboard_check_pressed(ord("F")) or gamepad_button_check_pressed(0, gp_start);
 	dash = keyboard_check_pressed(ord("S"));
+	pause = keyboard_check_pressed(vk_escape);
 	
 }
-	
-
-	
-	
-	
-	
-	
 #endregion	
 
-	
-	
-	
+#region PAUSE CONTROLS ----------
+
+//if noinput == paused {
+	//up = keyboard_check(vk_up) /*or keyboard_check(ord("W"))*/ or gamepad_button_check(0, gp_padu);
+	//down = keyboard_check(vk_down) /*or keyboard_check(ord("S"))*/ or gamepad_button_check(0, gp_padd);
+	//accept = keyboard_check_pressed(ord("C")) or gamepad_button_check_pressed(0, gp_face1);
+	//back = keyboard_check_pressed(ord("A")) or gamepad_button_check_pressed(0, gp_face2);
+//}
+
+#endregion	
 	
 	
 	
