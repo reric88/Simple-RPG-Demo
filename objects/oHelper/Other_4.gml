@@ -1,10 +1,11 @@
-#region CAMERA ----------
+#region PLAYER & CAMERA ----------
 if instance_exists(oPlayer){
 x = oPlayer.x;
 y = oPlayer.y;
+oPlayer.persistent = true;
 }
 #endregion
-// END CAMERA ----------
+// END PLAYER AND CAMERA ----------
 
 /// Remember the players start position
 

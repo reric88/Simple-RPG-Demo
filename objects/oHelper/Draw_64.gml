@@ -30,11 +30,11 @@ if room = rmPause{
 
 if room != rmPause{
 
-draw_text(display_get_gui_width()-175, 16, "HP: " + string(oStats.hp) + "/" + string(oStats.maxhp));
-draw_text(display_get_gui_width()-175, 32, "STA: " + string(oStats.stamina) + "/" + string(oStats.maxstamina));
-draw_text(display_get_gui_width()-175, 48, "ATK: " + string(oStats.attack));
-draw_text(display_get_gui_width()-175, 64, "XP: " + string(oStats.xp) + "/" + string(oStats.maxxp));
-draw_text(display_get_gui_width()-175, 80, "LV: " + string(oStats.level));
+draw_text(display_get_gui_width()-175, 16, "HP: " + string(hp) + "/" + string(maxhp));
+draw_text(display_get_gui_width()-175, 32, "STA: " + string(stamina) + "/" + string(maxstamina));
+draw_text(display_get_gui_width()-175, 48, "ATK: " + string(attack));
+draw_text(display_get_gui_width()-175, 64, "XP: " + string(xp) + "/" + string(maxxp));
+draw_text(display_get_gui_width()-175, 80, "LV: " + string(level));
 
 }
 

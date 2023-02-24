@@ -21,9 +21,9 @@ if room = Room1 {
 #region PAUSE MENU ----------
 sc_input();
 if (pause){
-				if !sprite_exists(screenshot){
-				screenshot = sprite_create_from_surface(application_surface, 0, 0, view_wport, view_hport, 0, 0, 0, 0);
-				}
+	if !sprite_exists(screenshot){
+	screenshot = sprite_create_from_surface(application_surface, 0, 0, view_wport, view_hport, 0, 0, 0, 0);
+	}
 	if (room != rmPause){
 		if (instance_exists(oPlayer)){
 			oPlayer.persistent = false;

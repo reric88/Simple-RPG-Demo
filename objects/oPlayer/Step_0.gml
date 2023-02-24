@@ -37,7 +37,40 @@ if (right) {sprite_index = sPlayerWR;  image_xscale =  1; image_speed = 1; lpos 
 if (up)    {sprite_index = sPlayerWU;  image_xscale =  1; image_speed = 1; lpos = "up"}
 if (down)  {sprite_index = sPlayerWD ; image_xscale =  1; image_speed = 1; lpos = "down"}
 
+// MOVE DASHING ----------
+/* if state != "dash" {
+		if left && dash {/*x += (30 * hspd) * mspd*/
+		/*	state = "dash";
+			noinput = true;
+			timer = 30;
+			countdown = 5;
+			alarm[0] = timer;
+				if (timer <=6) {
+					state = "idle";
+					noinput = false;
+		
 }
+	
+	}
+	
+*/
+// NEED TO IMPLEMENT PROPER DASHING, ABOVE DOES NOT WORK CORRECTLY
+
+
+
+
+
+
+
+
+}
+
+
+
+
+// END MOVE DASHING
+
+
 // END MOVEMENT ----------
 
 // ATTACK ANIMATION ----------
