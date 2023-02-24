@@ -18,12 +18,12 @@ if len == 0{
 len = spd*4;
 
 // Get the hspd and vspd
-hspd = lengthdir_x(len, dir);
-vspd = lengthdir_y(len, dir);
+xspd = lengthdir_x(len, dir);
+yspd = lengthdir_y(len, dir);
 
 // Move
-x += hspd;
-y += vspd;
+x += xspd;
+y += yspd;
 
 // Dash Sprite
 if right{

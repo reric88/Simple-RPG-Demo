@@ -26,11 +26,13 @@ if (dash) && (!left) && (!right) && (!down) && (!up) {
 
 // MOVEMENT ----------
 if (state == "idle") {
- hspd = right - left;
- vspd = down  - up;
+ xspd = right - left;
+ yspd = down  - up;
 
-x += hspd * mspd;
-y += vspd * mspd;
+event_inherited();
+
+x += xspd * mspd;
+y += yspd * mspd;
 
 if (left)  {sprite_index = sPlayerWR;  image_xscale = -1; image_speed = 1; lpos = "left"}
 if (right) {sprite_index = sPlayerWR;  image_xscale =  1; image_speed = 1; lpos = "right"}
@@ -39,7 +41,7 @@ if (down)  {sprite_index = sPlayerWD ; image_xscale =  1; image_speed = 1; lpos 
 
 // MOVE DASHING ----------
 /* if state != "dash" {
-		if left && dash {/*x += (30 * hspd) * mspd*/
+		if left && dash {/*x += (30 * xspd) * mspd*/
 		/*	state = "dash";
 			noinput = true;
 			timer = 30;

@@ -3,9 +3,9 @@ state = "idle";
 
 noinput = false;
 lpos = "down";
-mspd = 1;
-hspd = 0;
-vspd = 0;
+mspd = .8;
+xspd = 0;
+yspd = 0;
 
 // ----- DASHING
 len = 0;

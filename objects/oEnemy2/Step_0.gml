@@ -1,22 +1,36 @@
+if instance_exists(oPlayer) {
+dir = point_direction(x, y, oPlayer.x, oPlayer.y);
+}
 
-	
-	
-	
-	global.grid = mp_grid_create(0, 0, room_width div 32, room_height div 32, 32, 32);
-mp_grid_add_instances(global.grid, oWall, false);
-with (oEnemy2)
-{
-    path = path_add();
-    if mp_grid_path(global.grid, path, x, y, oPlayer.x, oPlayer.y, 1)
-    {
-        path_start(path, 0, 3, 0);
+xspd = lengthdir_x(mspd, dir);
+yspd = lengthdir_y(mspd, dir);
+
+event_inherited();
+
+x += xspd;
+y += yspd;
+
+/*
+var player = instance_nearest(x, y, oPlayer);
+targetX = player.x;
+targetY = player.y;
+
+// calculate the path to the player
+path_clear_points(path);
+path_start(path, mspd, path_action_continue, true);
+
+// move along the path
+if (path_position < 1) {
+    var moveX = path_get_x(path, path_position + 0.1) + x;
+    var moveY = path_get_y(path, path_position + 0.1) + y;
+    var moveLength = sqrt(moveX * moveX + moveY * moveY);
+    if (moveLength > 0) {
+        moveX /= moveLength;
+        moveY /= moveLength;
     }
-}
-if mp_grid_path(global.grid, path, x, y, oPlayer.x, oPlayer.y, 1)
-{
-    draw_path(path, x, y, false);
-}
-
-if place_meeting(x, y, oPlayer) {
-move_bounce_all(true)	
+	
+	event_inherited();
+	
+    x += moveX * mspd;
+    y += moveY * mspd;
 }
