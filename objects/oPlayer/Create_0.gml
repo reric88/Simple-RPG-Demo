@@ -1,4 +1,7 @@
 
+hp = 10;
+
+
 state = "idle";
 
 noinput = false;

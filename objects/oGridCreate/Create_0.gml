@@ -1,3 +1,5 @@
+// -------------UNUSED
+/*
 global.grid = mp_grid_create(0, 0, room_width div 18, room_height div 13, 16, 16);
 mp_grid_add_instances(global.grid, oWall, false);
 

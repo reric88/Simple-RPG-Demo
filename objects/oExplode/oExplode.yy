@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sp_explosion_1",
-    "path": "sprites/sp_explosion_1/sp_explosion_1.yy",
+    "name": "spExplosionWide",
+    "path": "sprites/spExplosionWide/spExplosionWide.yy",
   },
   "spriteMaskId": null,
   "visible": true,

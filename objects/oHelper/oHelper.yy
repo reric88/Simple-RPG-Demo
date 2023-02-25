@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Helper",
-    "path": "folders/Objects/Helper.yy",
+    "name": "Helpers",
+    "path": "folders/Objects/Helpers.yy",
   },
   "parentObjectId": null,
   "persistent": true,

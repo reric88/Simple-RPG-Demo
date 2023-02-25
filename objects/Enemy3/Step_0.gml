@@ -1,3 +1,15 @@
+event_inherited();
+
+if hp <= 0 {
+	instance_destroy();	
+}
+
+
+mp_potential_step(oPlayer.x, oPlayer.y, mspd, 1);
+//mp_potential_path()
+
+
+
 /* 
 if place_meeting(x, y, oPAttack){
 	var inst = instance_place(x, y,oPAttack )
