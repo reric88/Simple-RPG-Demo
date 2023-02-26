@@ -9,24 +9,23 @@ And installation package is included if you would like to try it. There is a zip
 
 ## The Controls
 
-### Escape
-To access the Pause Menu
-
 ### Arrow Keys or Gamepad Directions
 To move character & menu
 
-### A 
+### A or Gamepad Button 1
 Check environment
 
-### S
+### S or Gamepad Button 2
 Dash. (Idle dashing moves backwards, moving in the facing direction)
 
-### D
+### D or Gamepad Button 4
 Use item. Bomb is hardcoded for now.
 
-### C
+### C or Gamepad Button 3
 Attack. This will probably change to an arc.
 
-### F
+### F or Gamepad Select
 Inventory (Crude image, nothing else)
 
+### Escape or Gamepad Start
+Pause Menu
