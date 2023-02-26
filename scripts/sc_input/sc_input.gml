@@ -9,6 +9,11 @@ if (noinput == false) {
 	up = keyboard_check(vk_up) /*or keyboard_check(ord("W"))*/ or gamepad_button_check(0, gp_padu);
 	down = keyboard_check(vk_down) /*or keyboard_check(ord("S"))*/ or gamepad_button_check(0, gp_padd);
 	
+	leftrl = keyboard_check_released(vk_left) or gamepad_button_check_released(0, gp_padl);
+	rightrl = keyboard_check_released(vk_right) or gamepad_button_check_released(0, gp_padr);
+	uprl = keyboard_check_released(vk_up) or gamepad_button_check_released(0, gp_padu);
+	downrl = keyboard_check_released(vk_down) or gamepad_button_check_released(0, gp_padd);
+	
 	attack = keyboard_check_pressed(ord("C")) or gamepad_button_check_pressed(0, gp_face1);
 	check = keyboard_check_pressed(ord("A")) or gamepad_button_check_pressed(0, gp_face2);
 	item = keyboard_check_pressed(ord("D")) or gamepad_button_check_pressed(0, gp_select);

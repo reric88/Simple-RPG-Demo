@@ -2,7 +2,7 @@
 hp = 10;
 
 
-state = "idle";
+state = "move";
 
 noinput = false;
 lpos = "down";
@@ -11,9 +11,8 @@ xspd = 0;
 yspd = 0;
 
 // ----- DASHING
-len = 0;
-face = DOWN;
 
-dspd = 15;
-dtime = 0;
+face = "none";
+
+
 // ----- END

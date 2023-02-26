@@ -5,8 +5,31 @@ if hp <= 0 {
 }
 
 
-mp_potential_step(oPlayer.x, oPlayer.y, mspd, 1);
-//mp_potential_path()
+// mp_potential_step(oPlayer.x, oPlayer.y, mspd, 1);
+
+
+var rand = irandom_range(0, 360);
+
+
+if distance_to_object(Enemy3) <= 30 {
+	if path_exists(path) {
+		path_delete(path);
+		}
+	dir = point_direction(x, y, rand, rand);
+	dis = distance_to_object(Enemy3);
+	xspd = lengthdir_x(dis, rand);
+	yspd = lengthdir_y(dis, rand);
+
+	//event_inherited();
+
+	x += xspd;
+	y += yspd;
+	alarm_set(0, 60);
+	}
+
+
+
+
 
 
 

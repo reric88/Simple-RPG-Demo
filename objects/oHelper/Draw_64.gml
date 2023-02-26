@@ -1,13 +1,16 @@
 // Debugging
-draw_text(2, 2, "FPS=" + string(fps));
+draw_text(900, 10, "FPS=" + string(fps));
 
+/*
 if instance_exists(oPlayer){
 	draw_text(2, 32, "X:" + string(oPlayer.xprevious) + " Y:" + string(oPlayer.yprevious))
 }
+*/
 
-draw_text(2, 64, "ROOM: " + string(room));
+//draw_text(2, 64, "ROOM: " + string(room));
 
-draw_text(2, 96, "PREV. ROOM: " + string(oHelper.proom));
+//draw_text(2, 96, "PREV. ROOM: " + string(oHelper.proom));
+
 
 
 

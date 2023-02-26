@@ -1,11 +1,7 @@
+if path_exists(path) {
 path_delete(path);
-
-// NOT NEEDED
-/*
-if distance_to_object(Enemy3) < 30 {
-alarm_set(1,120);
 }
-*/	
+
 
 	
 path = path_add();
