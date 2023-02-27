@@ -1,20 +1,20 @@
 #region LIFEFORM COLLISION ----------
-if place_meeting(x + xspd, y, oWall) == true
+if place_meeting(x + xspd + 1, y, oWall) == true
 	{
 	xspd = 0;	
 	}
 
-if place_meeting(x, y + yspd, oWall) == true
+if place_meeting(x, y + yspd + 1, oWall) == true
 	{
 	yspd = 0;	
 	}
 	
-	if place_meeting(x + xspd, y, oLifeform) == true
+	if place_meeting(x + xspd + 3, y, oLifeform) == true
 	{
 	xspd = 0;	
 	}
 
-if place_meeting(x, y + yspd, oLifeform) == true
+if place_meeting(x, y + yspd + 3, oLifeform) == true
 	{
 	yspd = 0;	
 	}

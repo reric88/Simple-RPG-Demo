@@ -1,4 +1,4 @@
-damage = 0;
+damage = irandom_range(4, 10);
 knockback = 10;
 creator = noone;
 alarm[0] = 4;

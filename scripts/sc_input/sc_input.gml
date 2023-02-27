@@ -14,12 +14,12 @@ if (noinput == false) {
 	uprl = keyboard_check_released(vk_up) or gamepad_button_check_released(0, gp_padu);
 	downrl = keyboard_check_released(vk_down) or gamepad_button_check_released(0, gp_padd);
 	
-	attack = keyboard_check_pressed(ord("C")) or gamepad_button_check_pressed(0, gp_face1);
-	check = keyboard_check_pressed(ord("A")) or gamepad_button_check_pressed(0, gp_face2);
-	item = keyboard_check_pressed(ord("D")) or gamepad_button_check_pressed(0, gp_select);
-	menu = keyboard_check_pressed(ord("F")) or gamepad_button_check_pressed(0, gp_start);
-	dash = keyboard_check_pressed(ord("S"));
-	pause = keyboard_check_pressed(vk_escape);
+	attack = keyboard_check_pressed(ord("C")) or gamepad_button_check_pressed(0, gp_face3);
+	check = keyboard_check_pressed(ord("A")) or gamepad_button_check_pressed(0, gp_face1);
+	item = keyboard_check_pressed(ord("D")) or gamepad_button_check_pressed(0, gp_face4);
+	menu = keyboard_check_pressed(ord("F")) or gamepad_button_check_pressed(0, gp_select);
+	dash = keyboard_check_pressed(ord("S")) or gamepad_button_check_pressed(0, gp_face2);
+	pause = keyboard_check_pressed(vk_escape) or gamepad_button_check_pressed(0, gp_start);
 	
 }
 #endregion	

@@ -13,3 +13,5 @@ switch (lpos) {
 	
 	
 }
+
+instance_destroy(Smoothing);

@@ -10,10 +10,7 @@ depth = -y;
 // ATTACK ----------
 if (attack == 1) {state = "attack"; image_index = 0; noinput = true; attack = 0;
 	audio_play_sound(snSword, 1, 0);
-		if lpos == "left" {instance_create_layer(oPlayer.x - 11, oPlayer.y - 11, "Instances", dSword); dSword.image_xscale = -1;}
-		if lpos == "right" {instance_create_layer(oPlayer.x + 11, oPlayer.y - 11, "Instances", dSword)}
-		if lpos == "up"  {instance_create_layer(oPlayer.x, oPlayer.y - 24, "Instances", dSword); dSword.image_angle += 90;}
-		if lpos == "down" {instance_create_layer(oPlayer.x, oPlayer.y - 5, "Instances", dSword); dSword.image_angle -= 90;}
+
 			
 		
 	}
@@ -28,10 +25,10 @@ if (attack == 1) {state = "attack"; image_index = 0; noinput = true; attack = 0;
 		image_index = 0; 
 		noinput = true; 
 		dash = 0;	
-			if (lpos == "right") { face = "right"; Smoothing.x = oPlayer.x - 50; Smoothing.y = oPlayer.y}
-		    if (lpos == "left") { face = "left"; Smoothing.x = oPlayer.x + 50; Smoothing.y = oPlayer.y}
-		    if (lpos == "up") { face = "up"; Smoothing.y = oPlayer.y + 50; Smoothing.x = oPlayer.x}
-		    if (lpos == "down") { face = "down"; Smoothing.y = oPlayer.y - 50; Smoothing.x = oPlayer.x }
+			if (lpos == "right") { face = "right"; instance_create_layer(oPlayer.x - 50, oPlayer.y, "Instances", Smoothing)}
+		    if (lpos == "left")  { face = "left";  instance_create_layer(oPlayer.x + 50, oPlayer.y, "Instances", Smoothing)}
+		    if (lpos == "up")    { face = "up";    instance_create_layer(oPlayer.x, oPlayer.y + 50, "Instances", Smoothing)}
+		    if (lpos == "down")  { face = "down";  instance_create_layer(oPlayer.x, oPlayer.y - 50, "Instances", Smoothing)}
 	}
 
 	if (state == "dash") {
@@ -43,7 +40,7 @@ if (attack == 1) {state = "attack"; image_index = 0; noinput = true; attack = 0;
 				if place_meeting(x, y, Smoothing) {
 					face = "none";
 				}
-					 alarm_set(1, 10);
+			 alarm_set(1, 10);
 		}
 	}
 	
@@ -56,14 +53,14 @@ if (dash == 1 && xspd != 0 || dash == 1 && yspd != 0) {state = "dash";
 		image_index = 0; 
 		noinput = true; 
 		dash = 0;	
-			if (lpos == "right")     {face = "right"     ;Smoothing.x = oPlayer.x + 50; Smoothing.y = oPlayer.y}
-		    if (lpos == "left")      {face = "left"      ;Smoothing.x = oPlayer.x - 50; Smoothing.y = oPlayer.y}
-		    if (lpos == "up")        {face = "up"        ;Smoothing.y = oPlayer.y - 50; Smoothing.x = oPlayer.x}
-		    if (lpos == "down")      {face = "down"      ;Smoothing.y = oPlayer.y + 50; Smoothing.x = oPlayer.x }	
-			if (lpos == "rightup")   {face = "rightup"   ;Smoothing.x = oPlayer.x + 40; Smoothing.y = oPlayer.y - 40}
-		    if (lpos == "leftup")    {face = "leftup"    ;Smoothing.x = oPlayer.x - 40; Smoothing.y = oPlayer.y - 40}
-		    if (lpos == "rightdown") {face = "rightdown" ;Smoothing.y = oPlayer.y + 40; Smoothing.x = oPlayer.x + 40}
-		    if (lpos == "leftdown")  {face = "leftdown"  ;Smoothing.y = oPlayer.y + 40; Smoothing.x = oPlayer.x - 40}
+			if (lpos == "right")     {face = "right"     ;instance_create_layer(oPlayer.x + 50, oPlayer.y,     "Instances", Smoothing)}
+		    if (lpos == "left")      {face = "left"      ;instance_create_layer(oPlayer.x - 50, oPlayer.y,      "Instances", Smoothing)}
+		    if (lpos == "up")        {face = "up"        ;instance_create_layer(oPlayer.x, oPlayer.y - 50,      "Instances", Smoothing)}
+		    if (lpos == "down")      {face = "down"      ;instance_create_layer(oPlayer.x, oPlayer.y + 50,      "Instances", Smoothing)}
+			if (lpos == "rightup")   {face = "rightup"   ;instance_create_layer(oPlayer.x + 40, oPlayer.y - 40, "Instances", Smoothing)}
+		    if (lpos == "leftup")    {face = "leftup"    ;instance_create_layer(oPlayer.x - 40, oPlayer.y - 40, "Instances", Smoothing)}
+		    if (lpos == "rightdown") {face = "rightdown" ;instance_create_layer(oPlayer.x + 40, oPlayer.y + 40, "Instances", Smoothing)}
+		    if (lpos == "leftdown")  {face = "leftdown"  ;instance_create_layer(oPlayer.x - 40, oPlayer.y + 40, "Instances", Smoothing)}
 	}
 var diag = (face == "left" || face == "right" || face == "up" || face == "down" || 
 			face == "leftup" || face == "rightup" || face == "leftdown" || face == "rightdown");
@@ -126,14 +123,14 @@ x += xspd * mspd;
 y += yspd * mspd;
 
 
-if (left) {sprite_index = sPlayerWR;  image_xscale = -1; image_speed = 1; lpos = "left"}
-if (right) {sprite_index = sPlayerWR;  image_xscale =  1; image_speed = 1; lpos = "right"}
-if (up)    {sprite_index = sPlayerWU;  image_xscale =  1; image_speed = 1; lpos = "up"}
-if (down)  {sprite_index = sPlayerWD ; image_xscale =  1; image_speed = 1; lpos = "down"}
-if (left && up) {sprite_index = sPlayerWR;  image_xscale = -1; image_speed = 1; lpos = "leftup"}
-if (right && up) {sprite_index = sPlayerWR;  image_xscale =  1; image_speed = 1; lpos = "rightup"}
-if (left && down)    {sprite_index = sPlayerWU;  image_xscale =  1; image_speed = 1; lpos = "leftdown"}
-if (right && down)  {sprite_index = sPlayerWD ; image_xscale =  1; image_speed = 1; lpos = "rightdown"}
+if (left)          {sprite_index = sPlayerWR;  image_xscale = -1; image_speed = 1; lpos = "left"}
+if (right)         {sprite_index = sPlayerWR;  image_xscale =  1; image_speed = 1; lpos = "right"}
+if (up)            {sprite_index = sPlayerWU;  image_xscale =  1; image_speed = 1; lpos = "up"}
+if (down)          {sprite_index = sPlayerWD ; image_xscale =  1; image_speed = 1; lpos = "down"}
+if (left && up)    {sprite_index = sPlayerWR;  image_xscale = -1; image_speed = 1; lpos = "leftup"}
+if (right && up)   {sprite_index = sPlayerWR;  image_xscale =  1; image_speed = 1; lpos = "rightup"}
+if (left && down)  {sprite_index = sPlayerWU;  image_xscale =  1; image_speed = 1; lpos = "leftdown"}
+if (right && down) {sprite_index = sPlayerWD ; image_xscale =  1; image_speed = 1; lpos = "rightdown"}
 
 
 // MOVE DASHING ----------
@@ -222,7 +219,20 @@ if (item) {
 // END ITEM ----------
 
 
+// DEATH ----------
+if hp <= 0 {
+	image_alpha = clamp(image_alpha - .01, 0, 1);
+	x += xspd * 0; 
+	y += yspd * 0;
+	if dsound == false {
+		dsound = true;
+	
+noinput = true;
+alarm_set(4, 10);
+}
 
+
+}
 
 
 

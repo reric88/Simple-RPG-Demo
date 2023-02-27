@@ -1,5 +1,5 @@
 
-hp = 10;
+hp = 15;
 
 
 state = "move";
@@ -16,3 +16,5 @@ face = "none";
 
 
 // ----- END
+
+dsound = false;

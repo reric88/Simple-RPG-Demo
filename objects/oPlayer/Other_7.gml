@@ -1,6 +1,7 @@
 
 if (state == "attack") {
 	
+alarm[5] = 1;
 state = "move";
 noinput = false;
 instance_destroy(dSword);
